@@ -9,90 +9,236 @@
 	<form class="form-horizontal">
 		<h1>Acta de Constitucion del Proyecto</h1>
 		<legend>1. Historial de Revisiones</legend>
+		<table class="bordered-table zebra-striped">
+			<thead>
+				<tr>
+					<th>
+						Versión
+					</th>
+					<th>
+						Modificaciones
+					</th>
+					<th>
+						Modificado por
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="text" id="version" placeholder="">
+					</td>
+					<td>
+						<input type="text" id="modificado" placeholder="">
+					</td>
+					<td>
+						<input type="text" id="modificado_por" placeholder="">
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		<legend>2. Informacion General del proyecto</legend>
 		<div class="control-group">
 			<label class="control-label" for="inputEmail">Nombre:</label>
 			<div class="controls">
-				<input type="text" id="inputEmail" placeholder="Nombre">
+				<input type="text" id="nombre" placeholder="Nombre">
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="inputPassword">Preparado por:</label>
 			<div class="controls">
-				<input type="text" id="inputPassword" placeholder="Preparado por">
+				<input type="text" id="preparado_por" placeholder="Preparado por">
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="inputEmail">Fecha de Preparación:</label>
 			<div class="controls">
-				<input type="text" id="inputEmail" placeholder="Fecha de Preparación">
+				<input type="text" id="preparacion" placeholder="Fecha de Preparación">
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="inputPassword">Autorizado por:</label>
 			<div class="controls">
-				<input type="text" id="inputPassword" placeholder="Autorizado por">
+				<input type="text" id="autorizado" placeholder="Autorizado por">
 			</div>
 		</div>
 		<legend>3. Necesidad del Proyecto</legend>
 		<div class="control-group">
 			<label class="control-label" for="inputEmail">Necesidad del Proyecto:</label>
 			<div class="controls">
-				<textarea rows="3">Justificación y realidad problemática</textarea>
+				<textarea id="necesidad_proyecto" rows="3">Justificación y realidad problemática</textarea>
 			</div>
 		</div>
 		<legend>4. Objetivos del Proyecto</legend>
 		<div class="control-group">
 			<label class="control-label" for="inputEmail">Objetivos del Proyecto:</label>
 			<div class="controls">
-				<textarea rows="3"></textarea>
+				<textarea id="objetivo_proyecto" rows="3"></textarea>
 			</div>
 		</div>
 		<legend>5. Alcance del Proyecto</legend>
 		<div class="control-group">
 			<label class="control-label" for="inputEmail">Dentro del Alcance:</label>
 			<div class="controls">
-				<textarea rows="3"></textarea>
+				<textarea id="alcance_dentro_proyecto" rows="3"></textarea>
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="inputEmail">Fuera del Alcance:</label>
 			<div class="controls">
-				<textarea rows="3"></textarea>
+				<textarea id="alcance_fuera_proyecto" rows="3"></textarea>
 			</div>
 		</div>
 		<legend>6. Descripcion del Producto/Servicio</legend>
 		<div class="control-group">
 			<label class="control-label" for="inputEmail">Descripcion del Producto/Servicio:</label>
 			<div class="controls">
-				<textarea rows="3">requerimientos del producto/servicio</textarea>
+				<textarea id="descripcion_producto" rows="3">requerimientos del producto/servicio</textarea>
 			</div>
 		</div>
 		<legend>7. Participantes del Proyecto</legend>
 		<div class="control-group">
 			<label class="control-label" for="inputEmail">Auspiciador:</label>
 			<div class="controls">
-				<input type="text" id="inputEmail" placeholder="Auspiciador">
+				<input type="text" id="participantes_auspiciador" placeholder="Auspiciador">
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="inputPassword">Gerente o Jefe del Proyecto:</label>
 			<div class="controls">
-				<input type="text" id="inputPassword" placeholder="Gerente o Jefe del Proyecto">
+				<input type="text" id="participantes_gerente" placeholder="Gerente o Jefe del Proyecto">
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="inputEmail">Miembros del Equipo del Proyecto:</label>
 			<div class="controls">
-				<input type="text" id="inputEmail" placeholder="Miembros del Equipo del Proyecto">
+				<input type="text" id="participantes_miembros" placeholder="Miembros del Equipo del Proyecto">
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="inputPassword">Otros Involucrados:</label>
 			<div class="controls">
-				<input type="text" id="inputPassword" placeholder="Otros Involucrados">
+				<input type="text" id="participantes_otros" placeholder="Otros Involucrados">
 			</div>
 		</div>
-	</form>
+		<legend>8. Hitos Importantes del proyecto</legend>
+		<table class="bordered-table zebra-striped">
+			<thead>
+				<tr>
+					<th>
+						Hitos
+					</th>
+					<th>
+						Responsable (s)
+					</th>
+					<th>
+						Fecha de término
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="text" id="hito" placeholder="">
+					</td>
+					<td>
+						<input type="text" id="hito_responsable" placeholder="">
+					</td>
+					<td>
+						<input type="text" id="hito_fecha_fin" placeholder="">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<legend>9. Presupuesto Estimado</legend>
+		<table class="bordered-table zebra-striped">
+			<thead>
+				<tr>
+					<th>
+						Recurso
+					</th>
+					<th>
+						Cantidad
+					</th>
+					<th>
+						Monto($/.)
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="text" id="inputPassword" placeholder="">
+					</td>
+					<td>
+						<input type="text" id="inputPassword" placeholder="">
+					</td>
+					<td>
+						<input type="text" id="inputPassword" placeholder="">
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th colspan="2">
+						MONTO TOTAL ESTIMADO
+					</th>
+				</tr>
+			</tfoot>
+		</table>
+		<legend>10. Beneficios Esperados</legend>
+		<div class="control-group">
+			<label class="control-label" for="inputEmail">Beneficios</label>
+			<div class="controls">
+				<textarea id="beneficios" rows="3">Escriba aquí los beneficios que espera.</textarea>
+			</div>
+		</div>	
+		<legend>11. Restriccciones</legend>
+		<div class="control-group">
+			<label class="control-label" for="inputEmail">Tiempo:</label>
+			<div class="controls">
+				<input type="text" id="restricciones_tiempo" placeholder="">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputPassword">Seguridad:</label>
+			<div class="controls">
+				<input type="text" id="restricciones_segurida" placeholder="">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputEmail">Alcance:</label>
+			<div class="controls">
+				<input type="text" id="restricciones_alcance" placeholder="">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputPassword">Riesgo:</label>
+			<div class="controls">
+				<input type="text" id="restricciones_riesgo" placeholder="">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputEmail">Otras restricciones:</label>
+			<div class="controls">
+				<input type="text" id="restricciones_otros" placeholder="">
+			</div>
+		</div>
+		<legend>12. Supuestos</legend>
+		<div class="control-group">
+			<label class="control-label" for="inputEmail">Tiempo:</label>
+			<div class="controls">
+				<input type="text" id="supuestos_tiempo" placeholder="">
+			</div>
+		</div>
+		<legend>13. Criterios de Aceptación</legend>
+		<div class="control-group">
+			<label class="control-label" for="inputEmail">Criterios de Aceptacion</label>
+			<div class="controls">
+				<textarea id="criterio_aceptacion" rows="3">El proyecto culminará cuando se hayan cumplido los criterios de aceptación.</textarea>
+			</div>
+		</div>	
+	</div>
+</form>
 </body>
 </html>
